@@ -1,5 +1,5 @@
 Summary:	X.org video driver for old S3 video adapters
-Summary(pl):	Sterownik obrazu X.org dla starych kart graficznych S3
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla starych kart graficznych S3
 Name:		xorg-driver-video-s3
 Version:	0.5.0
 Release:	1
@@ -26,9 +26,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 X.org video driver for old S3 video adapters. It supports 964, 968,
 Trio32/64, Aurora64V+, Trio64UV+, Trio64V2/DX/GX chipsets.
 
-%description -l pl
-Sterownik obrazu X.org dla starych kart graficznych S3. Obs≥uguje
-uk≥ady 964, 968, Trio32/64, Aurora64V+, Trio64UV+, Trio64V2/DX/GX.
+%description -l pl.UTF-8
+Sterownik obrazu X.org dla starych kart graficznych S3. Obs≈Çuguje
+uk≈Çady 964, 968, Trio32/64, Aurora64V+, Trio64UV+, Trio64V2/DX/GX.
 
 %prep
 %setup -q -n xf86-video-s3-%{version}
