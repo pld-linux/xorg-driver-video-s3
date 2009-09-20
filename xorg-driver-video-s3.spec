@@ -1,12 +1,12 @@
 Summary:	X.org video driver for old S3 video adapters
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla starych kart graficznych S3
 Name:		xorg-driver-video-s3
-Version:	0.6.2
+Version:	0.6.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-s3-%{version}.tar.bz2
-# Source0-md5:	723f9fc2de66805c1984a37c6d41580e
+# Source0-md5:	5eb06d88533fb327d067928faeb20860
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
