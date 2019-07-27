@@ -1,14 +1,13 @@
 Summary:	X.org video driver for old S3 video adapters
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla starych kart graficznych S3
 Name:		xorg-driver-video-s3
-Version:	0.6.5
-Release:	11
+Version:	0.7.0
+Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-s3-%{version}.tar.bz2
-# Source0-md5:	37248d5c5a04d7f91c6f634cc592b304
-Patch0:		mibstore.patch
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-s3-%{version}.tar.bz2
+# Source0-md5:	8fa9c68b6f9c0fc21f3ba3eeab61e85c
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
@@ -20,6 +19,7 @@ BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
 BuildRequires:	xorg-proto-videoproto-devel
 BuildRequires:	xorg-proto-xextproto-devel
+BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.4
 %{?requires_xorg_xserver_videodrv}
@@ -57,7 +57,6 @@ układy:
 
 %prep
 %setup -q -n xf86-video-s3-%{version}
-%patch0 -p1
 
 %build
 %{__libtoolize}
@@ -82,6 +81,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README
+%doc COPYING ChangeLog README.md
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/s3_drv.so
 %{_mandir}/man4/s3.4*
